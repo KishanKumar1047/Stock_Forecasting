@@ -4,7 +4,7 @@ setuptools>=69.0.0
 wheel
 
 # Core ML and forecasting packages
-tensorflow==2.11.0
+tensorflow==2.15.0
 tensorboard==2.11.0
 protobuf>=3.20,<5
 tensorflow-estimator==2.11.0
