@@ -1,4 +1,5 @@
 # requirements.txt
+pip==24.0
 
 # Ensure build tools are available
 setuptools>=69.0.0
