@@ -29,7 +29,6 @@ The models are applied to real-world stock data (`apple_data.csv`) for Apple Inc
 ├── Stock\_market\_forecasting.ipynb   # Jupyter notebook with full model implementation
 └── README.md                        # You're reading it! 📘
 
-````
 
 ---
 
