@@ -1,130 +1,133 @@
-📈 Stock Market Forecasting using LSTM, ARIMA, SARIMA & Prophet
-This project predicts stock market trends using various forecasting models, including:
 
-🧠 LSTM (Long Short-Term Memory) – Deep Learning
-📊 ARIMA (AutoRegressive Integrated Moving Average)
-📈 SARIMA (Seasonal ARIMA)
-🔮 Prophet – Forecasting tool by Meta
+# 📈 Stock Market Forecasting using LSTM, ARIMA, SARIMA & Prophet
 
-The models are applied to real-world stock data (apple_data.csv) for Apple Inc.
+This project predicts stock market trends using multiple forecasting models, including:
 
-🗂️ Project Structure
+- 🧠 **LSTM** (Long Short-Term Memory) – Deep Learning
+- 📊 **ARIMA** (AutoRegressive Integrated Moving Average)
+- 📈 **SARIMA** (Seasonal ARIMA)
+- 🔮 **Prophet** – Forecasting tool by Meta
+
+The models are applied to real-world historical stock data of **Apple Inc.** (`apple_data.csv`).
+
+---
+
+## 🗂️ Project Structure
+
+```
+
 📁 stock-market-forecasting/
 │
 ├── models/                          # (Optional) For future model-specific scripts
 ├── venv/                            # Virtual environment
 │
 ├── app.py                           # Streamlit app for interactive forecasting
-├── apple_data.csv                   # Historical stock price dataset
+├── apple\_data.csv                   # Historical stock price dataset
 ├── requirements.txt                 # Required Python packages
 ├── runtime.txt                      # Python version for deployment (e.g., Streamlit Cloud)
-├── Stock_market_forecasting.ipynb   # Jupyter notebook with full model implementation
+├── Stock\_market\_forecasting.ipynb   # Jupyter notebook with full model implementation
 └── README.md                        # You're reading it! 📘
 
+````
 
-⚙️ Setup Instructions
-1. Clone the repository
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/stock-market-forecasting.git
 cd stock-market-forecasting
+````
 
-2. Create and activate virtual environment (optional but recommended)
+### 2. Create and activate a virtual environment (optional but recommended)
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+```
 
-3. Install dependencies
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-🚀 How to Use
-👉 Run the notebook
+## 🚀 How to Use
+
+### 👉 Run the Jupyter notebook
+
+```bash
 jupyter notebook Stock_market_forecasting.ipynb
+```
 
-This walks through:
+You'll walk through:
 
-Data loading and preprocessing
-Training each model (LSTM, ARIMA, SARIMA, Prophet)
-Evaluation metrics and visualizations
+* ✅ Data loading and preprocessing
+* ✅ Model training (LSTM, ARIMA, SARIMA, Prophet)
+* ✅ Evaluation metrics and visualizations
 
-👉 OR launch the Streamlit app
+### 👉 Or launch the Streamlit app
+
+```bash
 streamlit run app.py
+```
 
-This gives you an interactive UI to visualize forecasts from each model.
+This provides an **interactive UI** to visualize forecasts from each model.
 
-📊 Model Comparison
+---
 
+## 📊 Model Comparison
 
+| Model   | Seasonality | Trend | Handles Noise     | Training Time          |
+| ------- | ----------- | ----- | ----------------- | ---------------------- |
+| ARIMA   | ❌           | ✅     | ❌                 | ⏱️ Fast                |
+| SARIMA  | ✅           | ✅     | ❌                 | ⏱️ Fast                |
+| Prophet | ✅           | ✅     | ✅ (basic)         | ⏱️ Medium              |
+| LSTM    | ✅           | ✅     | ✅ (deep learning) | 🐢 Slow (needs tuning) |
 
-Model
-Seasonality
-Trend
-Handles Noise
-Training Time
+---
 
+## 📈 Sample Output
 
+* 📉 Line plots of actual vs. predicted stock prices
+* 📋 Model performance metrics: RMSE, MAE, R²
+* 🔮 Forecasts for the next 30 days
 
-ARIMA
-❌
-✅
-❌
-⏱️ Fast
+---
 
+## 📚 Dependencies
 
-SARIMA
-✅
-✅
-❌
-⏱️ Fast
+* `tensorflow` – for LSTM
+* `statsmodels` – for ARIMA/SARIMA
+* `prophet` – for time series forecasting
+* `pandas`, `numpy`, `matplotlib`, `plotly` – for data handling and visualization
+* `streamlit` – for interactive app interface
 
+---
 
-Prophet
-✅
-✅
-✅ (basic)
-⏱️ Medium
+## 📌 Future Enhancements
 
-
-LSTM
-✅
-✅
-✅ (deep)
-🐢 Slow (needs tuning)
-
-
-
-📈 Sample Output
-
-Line plots of actual vs predicted stock prices
-Model performance scores (RMSE, MAE, R²)
-Forecasts for next 30 days
-
-
-📚 Dependencies
-
-tensorflow – for LSTM
-statsmodels – for ARIMA/SARIMA
-prophet
-pandas, numpy, matplotlib, plotly
-streamlit – for web app
-
-
-📌 Future Enhancements
-
-Integrate technical indicators (MACD, RSI, etc.)
-Deploy on Streamlit Cloud or Hugging Face Spaces
-Add model selection toggle in UI
-Include backtesting and rolling forecast
+* ➕ Integrate technical indicators (MACD, RSI, etc.)
+* ☁️ Deploy on **Streamlit Cloud** or **Hugging Face Spaces**
+* 🔘 Add model selection toggle in the UI
+* 🔁 Include backtesting and rolling forecast support
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Kishan Kumar**
-📧 [kishankumar1047@gmail.com](mailto:kishankumar12345a@gmail.com)
+📧 [kishankumar1047@gmail.com](mailto:kishankumar1047@gmail.com)
 🔗 [LinkedIn](https://linkedin.com/in/kishankumar098)
 🐙 [GitHub](https://github.com/kishankumar1047)
 
 ---
 
-> *This project showcases the power of combining classical and deep learning techniques for real-world time series forecasting.*
-
-```
+> *This project showcases the power of combining classical statistical models and deep learning for real-world time series forecasting.*
