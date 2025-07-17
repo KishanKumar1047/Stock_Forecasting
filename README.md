@@ -114,9 +114,17 @@ Deploy on Streamlit Cloud or Hugging Face Spaces
 Add model selection toggle in UI
 Include backtesting and rolling forecast
 
+---
 
-🙋‍♂️ Author
-Kishan Kumar📧 kishankumar1047@gmail.com🔗 LinkedIn🐙 GitHub
+## 🙋‍♂️ Author
 
+**Kishan Kumar**
+📧 [kishankumar1047@gmail.com](mailto:kishankumar12345a@gmail.com)
+🔗 [LinkedIn](https://linkedin.com/in/kishankumar098)
+🐙 [GitHub](https://github.com/kishankumar1047)
 
-This project showcases the power of combining classical and deep learning techniques for real-world time series forecasting.
+---
+
+> *This project showcases the power of combining classical and deep learning techniques for real-world time series forecasting.*
+
+```
